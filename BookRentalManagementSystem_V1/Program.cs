@@ -10,9 +10,9 @@ namespace BookRentalManagementSystem_V1
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book("BOOK_001", "PONNIYIN SELVAN", "kalki", 10.00m);
-            Console.WriteLine(book1);
-            Console.ReadLine();
+            //Book book1 = new Book("BOOK_001", "PONNIYIN SELVAN", "kalki", 10.00m);
+            //Console.WriteLine(book1);
+            //Console.ReadLine();
             BookManager bookManager = new BookManager();
             int choise;
 
