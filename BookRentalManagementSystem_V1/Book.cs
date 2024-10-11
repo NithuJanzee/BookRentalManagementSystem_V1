@@ -8,18 +8,45 @@ namespace BookRentalManagementSystem_V1
 {
     internal class Book
     {
-        public string BookId;
-        public string Title;
-        public string Author;
-        public decimal RentalPrice;
+        private string bookId;
+        private string title;
+        private string author;
+        private decimal rentalPrice;
+        public string BookId
+        {
+            get { return bookId; }
+            set { bookId = value; }
+        }
 
-        public Book(string bookID , string title , string author , decimal rentalPrice)
+        public string Title
+        {
+            get { return title; }
+            set { title = value; }
+        }
+
+        public string Author
+        {
+            get { return author; }
+            set
+            {
+                author = value;
+            }
+        }
+
+        public decimal RentalPrice
+        {
+            get { return rentalPrice; }
+            set { rentalPrice = value; }
+        }
+
+        public Book(string bookID, string title, string author, decimal rentalPrice)
         {
             BookId = bookID;
             Title = title;
             Author = author;
             RentalPrice = rentalPrice;
         }
+
 
         public override string ToString()
         {

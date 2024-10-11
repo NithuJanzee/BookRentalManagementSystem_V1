@@ -49,9 +49,9 @@ namespace BookRentalManagementSystem_V1
         }
 
         //Update book
-        public void UpdateBook(string bookId , string title , string author , decimal rentalPrice , Book book)
+        public void UpdateBook(string bookId, string title, string author, decimal rentalPrice)
         {
-            var findBook = books.FirstOrDefault(b => b.BookId == bookId);
+            var findBook = books.Find(b => b.BookId == bookId);
             if (findBook != null)
             {
                 findBook.Title = title;
@@ -67,11 +67,12 @@ namespace BookRentalManagementSystem_V1
         //Delete Book
         public void DeleteBook(string bookId)
         {
-            var findBook = books.FirstOrDefault(b =>b.BookId == bookId);
+
+            var findBook = books.Find(b => b.BookId == bookId);
             if (findBook != null)
             {
                 books.Remove(findBook);
-                Console.WriteLine("Book removed succesfuly");
+                Console.WriteLine("Book removed successfully");
             }
             else
             {
