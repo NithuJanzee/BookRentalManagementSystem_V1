@@ -8,10 +8,10 @@ namespace BookRentalManagementSystem_V1
 {
     internal class Book
     {
-        private string BookId;
-        private string Title;
-        private string Author;
-        private decimal RentalPrice;
+        public string BookId;
+        public string Title;
+        public string Author;
+        public decimal RentalPrice;
 
         public Book(string bookID , string title , string author , decimal rentalPrice)
         {
