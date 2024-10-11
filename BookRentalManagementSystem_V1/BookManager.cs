@@ -79,6 +79,23 @@ namespace BookRentalManagementSystem_V1
                 Console.WriteLine("Book not found");
             }
         }
+
+        //Validate Price 
+        public decimal ValidatePrice()
+        {
+            decimal price;
+            do
+            {
+                Console.WriteLine("please enter valid Price");
+                price = Convert.ToDecimal(Console.ReadLine());
+                if (price <= 0)
+                {
+                    Console.WriteLine("pleae enter valid number");
+                }
+
+            } while (price <= 0);
+            return price;
+        }
     }
 }
 

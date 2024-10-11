@@ -12,6 +12,7 @@ namespace BookRentalManagementSystem_V1
         private string title;
         private string author;
         private decimal rentalPrice;
+        public int TotalBook { get; private set; }
         public string BookId
         {
             get { return bookId; }
@@ -47,6 +48,10 @@ namespace BookRentalManagementSystem_V1
             RentalPrice = rentalPrice;
         }
 
+        public Book()
+        {
+            TotalBook++;
+        }
 
         public override string ToString()
         {
