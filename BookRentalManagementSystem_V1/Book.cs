@@ -20,5 +20,10 @@ namespace BookRentalManagementSystem_V1
             Author = author;
             RentalPrice = rentalPrice;
         }
+
+        public override string ToString()
+        {
+            return $"Book ID : {BookId} Title : {Title} Author : {Author} RentalPrice {RentalPrice}";
+        }
     }
 }
